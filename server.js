@@ -25,23 +25,43 @@ function handleEvent(event) {
     return Promise.resolve(null);
   }
   let replyText = '';
-  let songs
-  switch(event.message.text) {
+  let songs = event.message.text
+  switch(songs) {
     case "七級":
+        replyText = '1st：quick master(reform version)(NORMAL)' + '\n' + '2nd：中華急行(NORMAL)' + '\n' + '3rd：Eternal Tears(NORMAL)' + '\n' + 'Final：CALL(NORMAL)'; 
+        break;
     case "六級":
+        replyText = '1st：I\'m so Happy(NORMAL)' + '\n' + '2nd：Wuv U(NORMAL)' + '\n' + '3rd：diagra(NORMAL)' + '\n' + 'Final：Element of SPADA(NORMAL)'; 
+        break;
     case "五級":
+        replyText = '1st：I\'m Screaming LOVE(NORMAL)' + '\n' + '2nd：突撃!ガラスのニーソ姫!(NORMAL)' + '\n' + '3rd：avant-guerre(NORMAL)' + '\n' + 'Final：バビロニア(NORMAL)'; 
+        break;
     case "四級":
+        replyText = '1st：Fly you to the star(NORMAL)' + '\n' + '2nd：ƒƒƒƒƒ(NORMAL)' + '\n' + '3rd：サヨナラ・ヘヴン(NORMAL)' + '\n' + 'Final：She is my wife(NORMAL)'; 
+        break;
     case "三級":
+        replyText = '1st：alla turca con passione(NORMAL)' + '\n' + '2nd：405nm(Ryu☆mix)(NORMAL)' + '\n' + '3rd：SigSig(NORMAL)' + '\n' + 'Final：REINCARNATION(HYPER)'; 
+        break;
     case "二級":
+        replyText = '1st：sync(NORMAL)' + '\n' + '2nd：satfinal(NORMAL)' + '\n' + '3rd：sakura storm(NORMAL)' + '\n' + 'Final：ライオン好き(HYPER)'; 
+        break;
     case "一級":
+        replyText = '1st：Red. by Full Metal Jacket(NORMAL)' + '\n' + '2nd：MENDES(NORMAL)' + '\n' + '3rd：BREATH(NORMAL)' + '\n' + 'Final：With your Smile(HYPER)'; 
+        break;
     case "初段":
+        replyText = '1st：Blind Justice～Torn souls, Hurt Faiths～(NORMAL)' + '\n' + '2nd：Funny shuffle(HYPER)' + '\n' + '3rd：GOLD RUSH(NORMAL)' + '\n' + 'Final：I Was The One(80\'s EUROBEAT STYLE)(HYPER)'; 
+        break;
     case "二段":
+        replyText = '1st：Monkey Dance(HYPER)' + '\n' + '2nd：Zenius -I- vanisher(HYPER)' + '\n' + '3rd：Drive Me Crazy(HYPER)' + '\n' + 'Final：Abyss(HYPER)'; 
+        break;
     case "三段":
+        replyText = '1st：かげぬい～Ver.BENIBOTAN～(HYPER)' + '\n' + '2nd：Presto(HYPER)' + '\n' + '3rd：BRIDAL FESTIVAL!!!(HYPER)' + '\n' + 'Final：CaptivAte～裁き～(HYPER)'; 
+        break;
     case "四段":
-        replyText = '四段以下は、現在作成中です';
+        replyText = '1st：era (nostalmix)(HYPER)' + '\n' + '2nd：虹色(HYPER)' + '\n' + '3rd：TA・DA☆YO・SHI(HYPER)' + '\n' + 'Final：R5(HYPER)'; 
         break;
     case "五段":
-        replyText = '1st：Follow Tomorrow' + '\n' + '2nd：Mermaid girl' + '\n'+ '3rd：Todestrieb' + '\n'+ 'Final：NEW GENERATION -もう、お前しか見えない-';
+        replyText = '1st：Follow Tomorrow(HYPER)' + '\n' + '2nd：Mermaid girl(HYPER)' + '\n'+ '3rd：Todestrieb(HYPER)' + '\n'+ 'Final：NEW GENERATION -もう、お前しか見えない-(HYPER)';
         break;
     case "六段":
         replyText = '1st：quasar(HYPER)' + '\n' + '2nd：バンブーソード・ガール(HYPER)' + '\n'+ '3rd：DIAVOLO(HYPER)' + '\n'+ 'bloomin\' feeling(HYPER)';
